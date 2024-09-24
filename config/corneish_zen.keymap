@@ -24,10 +24,9 @@
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
 
-            tapping-term-ms = <199>;
+            tapping-term-ms = <200>;
         };
     };
 
