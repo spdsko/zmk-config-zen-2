@@ -67,6 +67,36 @@
             bindings = <&kp TAB>;
             key-positions = <3 2>;
         };
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <26 27>;
+        };
+
+        cmd {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <38 37>;
+        };
+
+        alt {
+            bindings = <&kp LALT>;
+            key-positions = <39 40>;
+        };
+
+        shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <8 9>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+        };
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
