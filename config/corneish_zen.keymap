@@ -107,12 +107,19 @@
     };
 
     macros {
-        shift: with_lshift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>;
-            label = "KEY_PRESS_WITH_LEFT_SHIFT_MODIFIER";
-        };
+       shift: with_lshift {
+       compatible = "zmk,behavior-macro-one-param";
+       #binding-cells = <1>;
+       label = "KEY_PRESS_WITH_LEFT_SHIFT_MODIFIER";
+       bindings
+         = <&macro_press>
+         , <&kp LSHFT>
+         , <&macro_tap>
+         , <&macro_param_1to1 &kp MACRO_PLACEHOLDER>
+         , <&macro_release>
+         , <&kp LSHFT>
+         ;
+      };
     };
 
     keymap {
