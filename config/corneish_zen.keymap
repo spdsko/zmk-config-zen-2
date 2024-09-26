@@ -117,6 +117,20 @@
                 <&macro_release>,
                 <&kp LSHFT>;
         };
+
+        lctrl_plus_backspace: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
