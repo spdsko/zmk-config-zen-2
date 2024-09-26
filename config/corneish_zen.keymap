@@ -99,7 +99,7 @@
         };
 
         delete {
-            bindings = <&kp DEL>;
+            bindings = <&lctrl_plus_backspace>;
             key-positions = <32 33>;
         };
     };
